@@ -131,3 +131,5 @@ function time_updator() {
 time_updator()
 //setInterval will call the time_updator function continuesly to update second minute and hour hand based on current time
 setInterval(time_updator,4)
+
+//THE END

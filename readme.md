@@ -1,0 +1,1 @@
+thius analog created by html css and javascript and some bug 
