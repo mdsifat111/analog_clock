@@ -1,0 +1,292 @@
+/*
+hour=30deg rotate
+min & sec=6deg rotate
+*/
+body {
+  margin: 0px;
+  position: fixed;
+  background: black;
+}
+
+.clock{
+  border-radius: 100%;
+  background: white;
+  height: 220px;
+  width: 220px;
+  margin-left: 70px;
+  margin-top: 229.5px;
+  position: fixed;
+}
+
+.s_gd {
+  width: 1px;
+  height: 220;
+  background: blue;
+  position: fixed;
+  margin-top: 229.5;
+  margin-left: 179.5;
+}
+
+.s_grid_opacitor {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background: black;
+  position: fixed;
+  margin-top: 239.5px;
+  margin-left: 80px;
+}
+
+.middle_space {
+  position: fixed;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background:#e2e0f6c3;
+  margin-top: 264.5px;
+  margin-left: 105px;
+}
+
+.mid_point {
+  height: 16px;
+  width: 16px;
+  background: blue;
+  border-radius: 100%;
+  margin-left: 172px;
+  margin-top: 331.5px;
+  position: fixed;
+}
+
+/*bellow code for hour grid*/
+.h_gd {
+  height: 220px;
+  width: 2px;
+  background: #4def82;
+  position: fixed;
+  margin-top: 229.5px;
+  margin-left: 179px;
+}
+
+.h_grid_opacitor {
+  height: 190px;
+  width: 190px;
+  margin-top: 244.5px;
+  margin-left: 85px;
+  border-radius: 100%;
+  background: white;
+  position: fixed;
+}
+
+.num1,.num2,.num3,.num4,.num5,.num6,.num7,.num8,.num9,.num10,.num11,.num12 {
+  color: black;
+  font-size: 10px;
+  font-weight: 900;
+  position: fixed;
+}
+
+.num1 {
+  margin-top: 227.5px;
+  margin-left: 175px;
+}
+
+.num2 {
+  margin-top: 241px;
+  margin-left: 230px;
+}
+
+.num3 {
+  margin-top: 280px;
+  margin-left: 269px;
+}
+
+.num4 {
+  margin-top: 333.5px;
+  margin-left: 283.5px;
+}
+
+.num5 {
+  margin-top: 386px;
+  margin-left: 270px;
+}
+
+.num6 {
+  margin-top: 426px;
+  margin-left: 230px;
+}
+
+.num7 {
+  margin-top: 440px;
+  margin-left: 177px;
+}
+
+.num8 {
+  margin-top: 426px;
+  margin-left: 124px;
+}
+
+.num9 {
+  margin-top: 387.5px;
+  margin-left: 84px;
+}
+
+.num10 {
+  margin-top: 333.5px;
+  margin-left: 70px;
+}
+
+.num11 {
+  margin-top: 281px;
+  margin-left: 82px;
+  transform: rotate(300deg);
+}
+
+.num12 {
+  margin-top: 242px;
+  margin-left: 121px;
+  transform: rotate(330deg);
+}
+
+
+.ring {
+  height: 220px;
+  width: 220px;
+  border: 20px solid #1514fac4;
+  border-radius: 100%;
+  position: fixed;
+  margin-top: 209.5px;
+  margin-left: 50px;
+  /*box-shadow: 0 0 30px white;*/
+}
+
+
+
+/*bellow code for hour minute & second hand*/
+.hour_hand {
+  height: 188px;
+  width: 8px;
+  position: fixed;
+  margin-left: 176px;
+  margin-top: 245.5px;
+}
+
+.hour {
+  height: 94px;
+  width: 8px;
+  background: blue;
+  border-radius: 100%;
+}
+
+.h {
+  height: 47px;
+  width: 8px;
+  background: blue;
+  transform: translatey(47px);
+}
+
+
+
+.minute_hand {
+  height: 188px;
+  width: 4px;
+  position: fixed;
+  margin-left: 178;
+  margin-top: 245.5;
+}
+
+.minute {
+  height: 94px;
+  width: 4px;
+  background: blue;
+  border-radius: 100%;
+}
+
+.m {
+  height: 47px;
+  width: 4px;
+  background: blue;
+  transform: translatey(47px);
+}
+
+.second_hand {
+  height: 188px;
+  width: 2px;
+  position: fixed;
+  margin-left: 179;
+  margin-top: 245.5;
+}
+
+.second {
+  height: 94px;
+  width: 2px;
+  background: blue;
+  border-radius: 100%;
+}
+
+.s {
+  height: 47px;
+  width: 2px;
+  background: blue;
+  transform: translatey(47px);
+}
+
+
+/*digital clock styling sarting from here*/
+.digital_clock_box{
+  position: fixed;
+  height:40px;
+  width:180px;
+  background:#0fff26;
+  border:5px solid white;
+  color:blue;
+  font-size:30px;
+  font-weight: 500;
+  margin-left:85px;
+  margin-top:100px;
+  /*box-shadow: 0 0 20px white;*/
+  border-radius:3px;
+}
+
+.digital_hour_box,.colon_1,.digital_minute_box,.colon_2,.digital_second_box,.colon_3,.digital_millisecond_box{
+  position: fixed;
+  height:40px;
+  width:41.25px;
+  background: #1514fac4;
+  margin-top: 105px;
+  opacity: 100%;
+  margin-left:90px;
+  color:white;
+  font-size:20px;
+  font-weight:500;
+  display:grid;
+  place-items:center;
+}
+
+.colon_1,.colon_2,.colon_3{
+  width:5px;
+  background: #12ff30;
+  margin-left: 131.25px;
+  color:#ff7120;
+}
+
+.digital_minute_box{
+  background: ;
+  margin-left: 136.25px;
+}
+
+.colon_2{
+  margin-left: 177.5px;
+}
+
+.digital_second_box{
+  background: ;
+  margin-left: 182.5px;
+}
+
+.colon_3{
+  margin-left: 223.75px;
+}
+
+.digital_millisecond_box{
+  margin-left: 228.75px;
+  background: ;
+}

@@ -1,0 +1,34 @@
+body{
+  margin:0px;
+}
+
+.clock_ring{
+  background:blue;
+  height:50.36818851251841%;
+  width:95%;
+  position:fixed;
+  border-radius:100%;
+  left:2.5%;
+  top:24.815905743740796%;
+}
+
+
+.clock {
+  border-radius: 100%;
+  background:white;
+  height:42.415316642120764%;
+  width:80%;
+  position: fixed;
+  left:10%;
+  top:28.792341678939618%;
+}
+
+.middle_space{
+  height:26.50957290132548%;
+  width:50%;
+  top:36.74521354933726%;
+  left:25%;
+  background:red;
+  border-radius: 100%;
+  position:fixed;
+}
